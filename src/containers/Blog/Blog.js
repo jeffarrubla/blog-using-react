@@ -14,7 +14,7 @@ class Blog extends Component {
     }
 
     componentDidMount() {        
-        axios.get('http://jsonplaceholder.typicode.com/postsssss') //the error is here, a bad url
+        axios.get('http://jsonplaceholder.typicode.com/posts')
             .then(response => {
                 const posts = response.data.slice(0, 4);
                 const updatedPosts = posts.map(post => {
